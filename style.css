@@ -1,8 +1,8 @@
 header #hand-stiker {
     display: block;
+    margin: 0 auto;
     width: 15%;
     height: auto;
-    object-position: 100px center;
 }
 
 header #main-text {
