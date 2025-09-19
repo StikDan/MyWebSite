@@ -17,7 +17,7 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url(../WebSite/assets/black-bricks-background.png);
+    background-image: url(../MyWebSite/assets/black-bricks-background.png);
 }
 
 /*section::before {
@@ -49,41 +49,48 @@
 
 .text-box p {
     font-size: 200%;
+    padding: 3%;
     color: rgb(233, 233, 233);
     text-align: left;
     text-shadow: 1px 4px 0 black;
 }
 
-.image-box #img-1 {
+.image-box img:hover {
+    animation-name: custom-hover;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.image-box .img-1, .image-box .img-2, .image-box .img-3 {
     display: inline-block;
     width: 25%;
     height: 25%;
-    margin-right: 0 10%;
+    background-size: cover;
+    background-color: azure;
+    border-radius: 3%;
+}
+
+.image-box .img-1 {
     margin-left: 2%;
-    background-size: cover;
-    background-color: azure;
-    border-radius: 3%;
 }
 
-.image-box #img-2 {
-    display: inline-block;
-    width: 25%;
-    height: 25%;
+.image-box .img-2 {
     margin: 0 10%;
-    background-size: cover;
-    background-color: azure;
-    border-radius: 3%;
 }
 
-.image-box #img-3 {
-    display: inline-block;
+.image-box .img-3 {
     width: 24.8%;
     height: 30%;
-    background-size: cover;
-    background-color: azure;
-    border-radius: 3%;
 }
 
-.text-box p {
-    padding: 3%;
+@keyframes custom-hover{
+    from {
+        width: 25%;
+        height: 25%;
+    }
+    to {
+        width: 27%;
+        height: 35%;
+    }
 }
